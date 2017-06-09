@@ -6,6 +6,8 @@ RUN mkdir -p /home/admin/app&&cd /home/admin/app&&git init&&git pull https://git
 
 COPY start.sh /home/admin/app/
 
+RUN chmod 777 /home/admin/app/start.sh
+
 CMD /home/admin/app/start.sh
 
 
