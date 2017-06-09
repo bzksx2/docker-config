@@ -4,7 +4,9 @@ RUN yum install epel-release -y &&yum install nginx -y&&yum install git -y&&yum 
 
 RUN mkdir -p /home/admin/app&&cd /home/admin/app&&git init&&git pull https://github.com/userya/release-package-config-s.git
 
-CMD start.sh
+COPY start.sh /home/admin/app/
+
+CMD /home/admin/app/start.sh
 
 
 
