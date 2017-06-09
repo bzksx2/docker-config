@@ -8,7 +8,7 @@ COPY start.sh /home/admin/app/
 
 RUN chmod 777 /home/admin/app/start.sh
 
-CMD ["bash /home/admin/app/start.sh"]
+CMD ["./home/admin/app/start.sh"]
 
 
 
